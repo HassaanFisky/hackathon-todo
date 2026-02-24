@@ -2,10 +2,9 @@
 
 import { useEffect, useState } from "react";
 import { useRouter } from "next/navigation";
-import { authClient } from "../../lib/auth-client";
-import { setAuthToken } from "../../lib/api";
-import TaskList from "../../components/TaskList";
-import TaskForm from "../../components/TaskForm";
+import { authClient } from "@/lib/auth-client";
+import TaskList from "@/components/TaskList";
+import TaskForm from "@/components/TaskForm";
 
 export default function TasksPage() {
   const router = useRouter();
