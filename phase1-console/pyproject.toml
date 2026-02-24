@@ -1,0 +1,7 @@
+[project]
+name = "phase1-console"
+version = "0.1.0"
+description = "Phase I: In-memory Python console todo app - Hackathon Todo"
+readme = "README.md"
+requires-python = ">=3.13"
+dependencies = []
