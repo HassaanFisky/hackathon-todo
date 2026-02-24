@@ -1,0 +1,11 @@
+project:
+  name: Hackathon Todo App
+  version: 2.0.0
+  description: Hackathon project showcasing FastAPI backend and Next.js frontend with Better Auth.
+directories:
+  backend: FastAPI backend
+  frontend: Next.js frontend
+  specs: Markdown specification files
+phases:
+  - phase1: Console Todo app
+  - phase2: Full-Stack Web Application
