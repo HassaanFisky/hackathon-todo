@@ -142,7 +142,7 @@ export default function TaskList({ userId, refreshKey }: TaskListProps) {
             <div className="flex items-start gap-4">
               <button
                 onClick={() => toggleComplete(task.id)}
-                className={`flex-shrink-0 mt-1 w-6 h-6 rounded-full border-2 flex items-center justify-center transition-colors duration-200 ${
+                className={`shrink-0 mt-1 w-6 h-6 rounded-full border-2 flex items-center justify-center transition-colors duration-200 ${
                   task.completed
                     ? "bg-green-500 border-green-500 text-white"
                     : "border-gray-300 hover:border-gray-400"
