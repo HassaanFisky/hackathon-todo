@@ -11,5 +11,6 @@ dependencies = [
     "psycopg2-binary",
     "python-jose[cryptography]",
     "python-dotenv",
-    "asyncpg"
+    "asyncpg",
+    "google-generativeai>=0.8.6",
 ]

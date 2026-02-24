@@ -5,6 +5,7 @@ import { useRouter } from "next/navigation";
 import { authClient } from "@/lib/auth-client";
 import TaskList from "@/components/TaskList";
 import TaskForm from "@/components/TaskForm";
+import Link from "next/link";
 
 export default function TasksPage() {
   const router = useRouter();
@@ -75,10 +76,16 @@ export default function TasksPage() {
                 Hackathon Todo
               </h1>
             </div>
-            <div className="flex items-center gap-4">
+            <div className="flex items-center gap-3">
               <span className="text-sm text-gray-600 hidden sm:block">
                 Welcome, {session.user.name || session.user.email}
               </span>
+              <Link
+                href="/chat"
+                className="inline-flex items-center px-3 py-1.5 border border-transparent text-sm font-medium rounded-md text-white bg-blue-600 hover:bg-blue-700 transition-colors"
+              >
+                ✨ Chat with AI
+              </Link>
               <button
                 onClick={handleSignOut}
                 className="inline-flex items-center px-3 py-1.5 border border-transparent text-sm font-medium rounded-md text-red-600 bg-red-50 hover:bg-red-100 transition-colors"
